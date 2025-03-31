@@ -5,33 +5,89 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#5DDFFF">
+
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bible Books Finder"
+        android:fontFamily="@font/timesnewroman"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_centerInParent="true"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bible Books Finder"
-            android:layout_centerInParent="true" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/llLinearLayout"
+        android:layout_below="@+id/lblTitle"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
 
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinner"
-            android:layout_centerInParent="true"/>
+            android:background="@drawable/spinner_style"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/lblBookName"/>
+            android:id="@+id/lblBookName"
+            android:text="Book"
+            android:fontFamily="@font/timesnewroman"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblChapter"
+            android:text="Chapter"
+            android:fontFamily="@font/timesnewroman"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblVerse"
+            android:text="Verse"
+            android:fontFamily="@font/timesnewroman"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCharacter"
+            android:text="Character"
+            android:fontFamily="@font/timesnewroman"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblType"
+            android:text="Type"
+            android:fontFamily="@font/timesnewroman"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 

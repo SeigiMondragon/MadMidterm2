@@ -1,6 +1,8 @@
 package com.example.madmidterm;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -14,12 +16,21 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
+    Spinner spinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        Spinner spinner = findViewById(R.id.spinner);
+
+        String [] books = {"Sample1", "Sample2", "Sample3", "Sample4"};
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_list, books);
+        adapter.setDropDownViewResource(R.layout.spinner_list);
+        spinner.setAdapter(adapter);
 
         String url = "https://mocki.io/v1/2e6af150-20a1-4966-a6c7-100331830790";
 
