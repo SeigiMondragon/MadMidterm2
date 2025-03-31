@@ -73,18 +73,18 @@
             android:shadowRadius="2"/>
 
         <TextView
+            android:id="@+id/lblVerse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/lblVerse"
-            android:text="Verse"
             android:fontFamily="@font/timesnewroman"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             android:shadowColor="#000000"
             android:shadowDx="5"
             android:shadowDy="5"
-            android:shadowRadius="2"/>
+            android:shadowRadius="2"
+            android:text="Verse"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -98,7 +98,9 @@
             android:shadowColor="#000000"
             android:shadowDx="5"
             android:shadowDy="5"
-            android:shadowRadius="2"/>
+            android:shadowRadius="2"
+            android:gravity="center"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -112,7 +114,9 @@
             android:shadowColor="#000000"
             android:shadowDx="5"
             android:shadowDy="5"
-            android:shadowRadius="2"/>
+            android:shadowRadius="2"
+            android:gravity="center"
+            />
 
     </LinearLayout>
 
