@@ -16,5 +16,10 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+
+        String url = "https://mocki.io/v1/2e6af150-20a1-4966-a6c7-100331830790";
+
+
+        JSON
     }
 }
